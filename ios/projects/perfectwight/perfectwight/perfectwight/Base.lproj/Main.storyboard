@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="perfectwight" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" alpha="0.65000000000000002" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Your hight " textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dtM-vv-xm0">
+                                <rect key="frame" x="22" y="75" width="331" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="Uz1-Lq-JTX"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Your Weight" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iVm-dk-7hD">
+                                <rect key="frame" x="22" y="124" width="331" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="EaK-dK-cfh"/>
+                                </connections>
+                            </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="تطبيق حساب الوزن المثالي" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Jdk-aK-zOq">
+                                <rect key="frame" x="22" y="20" width="331" height="47"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" cocoaTouchSystemColor="lightTextColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="47" id="IA3-Pv-0ms"/>
+                                </constraints>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="22"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select Your Gender" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TKo-Je-KQh">
+                                <rect key="frame" x="22" y="199" width="331" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8QK-Hl-X1H">
+                                <rect key="frame" x="22" y="258" width="331" height="113"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="113" id="gES-So-Y2X"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="aIu-zM-h6E"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="VFT-bU-zoZ"/>
+                                </connections>
+                            </pickerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Perfect Weight" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KBF-oD-oxz">
+                                <rect key="frame" x="22" y="506" width="331" height="20.5"/>
+                                <color key="tintColor" red="0.50196081400000003" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c1T-FE-b6a">
+                                <rect key="frame" x="22" y="417" width="331" height="30"/>
+                                <color key="tintColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Calculate"/>
+                                <connections>
+                                    <action selector="bucal:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NAu-DP-wJW"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="KBF-oD-oxz" firstAttribute="trailing" secondItem="c1T-FE-b6a" secondAttribute="trailing" id="1KF-jr-uS3"/>
+                            <constraint firstItem="8QK-Hl-X1H" firstAttribute="leading" secondItem="TKo-Je-KQh" secondAttribute="leading" id="27W-dy-VEH"/>
+                            <constraint firstItem="8QK-Hl-X1H" firstAttribute="top" secondItem="TKo-Je-KQh" secondAttribute="bottom" constant="38" id="33a-hh-uDP"/>
+                            <constraint firstItem="dtM-vv-xm0" firstAttribute="trailing" secondItem="Jdk-aK-zOq" secondAttribute="trailing" id="CDi-II-bwe"/>
+                            <constraint firstItem="dtM-vv-xm0" firstAttribute="leading" secondItem="Jdk-aK-zOq" secondAttribute="leading" id="HJX-mP-5AB"/>
+                            <constraint firstItem="Jdk-aK-zOq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="22" id="Hm2-GQ-X2U"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Jdk-aK-zOq" secondAttribute="trailing" constant="22" id="N3Y-pU-bx2"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="KBF-oD-oxz" secondAttribute="trailing" constant="22" id="NMg-pe-ueR"/>
+                            <constraint firstItem="iVm-dk-7hD" firstAttribute="top" secondItem="dtM-vv-xm0" secondAttribute="bottom" constant="19" id="QUr-bR-9fb"/>
+                            <constraint firstItem="8QK-Hl-X1H" firstAttribute="trailing" secondItem="TKo-Je-KQh" secondAttribute="trailing" id="Qdj-bb-0GG"/>
+                            <constraint firstItem="TKo-Je-KQh" firstAttribute="leading" secondItem="iVm-dk-7hD" secondAttribute="leading" id="Ru9-ZI-jHc"/>
+                            <constraint firstItem="dtM-vv-xm0" firstAttribute="top" secondItem="Jdk-aK-zOq" secondAttribute="bottom" constant="8" id="VGC-FK-s6h"/>
+                            <constraint firstItem="c1T-FE-b6a" firstAttribute="top" secondItem="8QK-Hl-X1H" secondAttribute="bottom" constant="46" id="Z8p-Eh-FPm"/>
+                            <constraint firstItem="Jdk-aK-zOq" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Zsi-jD-ey6"/>
+                            <constraint firstItem="TKo-Je-KQh" firstAttribute="trailing" secondItem="iVm-dk-7hD" secondAttribute="trailing" id="bBD-13-bEO"/>
+                            <constraint firstItem="iVm-dk-7hD" firstAttribute="leading" secondItem="dtM-vv-xm0" secondAttribute="leading" id="gFm-ld-KfI"/>
+                            <constraint firstItem="c1T-FE-b6a" firstAttribute="trailing" secondItem="8QK-Hl-X1H" secondAttribute="trailing" id="nCA-5g-rj9"/>
+                            <constraint firstItem="c1T-FE-b6a" firstAttribute="leading" secondItem="8QK-Hl-X1H" secondAttribute="leading" id="s5s-eG-zVg"/>
+                            <constraint firstItem="TKo-Je-KQh" firstAttribute="top" secondItem="iVm-dk-7hD" secondAttribute="bottom" constant="45" id="s7Q-tu-dHW"/>
+                            <constraint firstItem="KBF-oD-oxz" firstAttribute="leading" secondItem="c1T-FE-b6a" secondAttribute="leading" id="uCu-mq-i3b"/>
+                            <constraint firstItem="iVm-dk-7hD" firstAttribute="trailing" secondItem="dtM-vv-xm0" secondAttribute="trailing" id="uf2-zw-pwc"/>
+                            <constraint firstItem="KBF-oD-oxz" firstAttribute="top" secondItem="c1T-FE-b6a" secondAttribute="bottom" constant="59" id="unU-Lc-qny"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="hightt" destination="dtM-vv-xm0" id="PqO-lD-jWN"/>
+                        <outlet property="ladiplay" destination="KBF-oD-oxz" id="CBi-v7-fMz"/>
+                        <outlet property="laselected" destination="TKo-Je-KQh" id="PjG-F6-XlV"/>
+                        <outlet property="pickerview" destination="8QK-Hl-X1H" id="0NX-Vc-Ymm"/>
+                        <outlet property="wight" destination="iVm-dk-7hD" id="DMe-dh-pvA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="127.28635682158921"/>
+        </scene>
+    </scenes>
+</document>

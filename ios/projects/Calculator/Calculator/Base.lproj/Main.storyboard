@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Calculator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ncd-Y3-7dv">
+                                <rect key="frame" x="10" y="94" width="355" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Result" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OnF-cg-Ipf">
+                                <rect key="frame" x="5" y="167" width="365" height="20"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Second Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nC5-QZ-70w">
+                                <rect key="frame" x="5" y="116" width="365" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R4g-gt-ghH">
+                                <rect key="frame" x="10" y="367" width="61" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Sum"/>
+                                <connections>
+                                    <action selector="busum:" destination="BYZ-38-t0r" eventType="touchUpInside" id="60B-8o-nqj"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZbC-Zt-hYh">
+                                <rect key="frame" x="10" y="217" width="61" height="42"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Mult"/>
+                                <connections>
+                                    <action selector="bumult:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TsM-dh-Gyt"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h9H-AX-ait">
+                                <rect key="frame" x="10" y="317" width="61" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Sub"/>
+                                <connections>
+                                    <action selector="busub:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5m1-ed-QuD"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter First Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PAS-Dm-Vt9">
+                                <rect key="frame" x="5" y="64" width="365" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="16L-9z-ZLp">
+                                <rect key="frame" x="10" y="267" width="61" height="42"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Div"/>
+                                <connections>
+                                    <action selector="budiv:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VMZ-pC-Fku"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ncd-Y3-7dv" secondAttribute="trailing" constant="10" id="4gy-QO-9yD"/>
+                            <constraint firstItem="OnF-cg-Ipf" firstAttribute="trailing" secondItem="nC5-QZ-70w" secondAttribute="trailing" id="5Vo-6j-eee"/>
+                            <constraint firstItem="nC5-QZ-70w" firstAttribute="leading" secondItem="PAS-Dm-Vt9" secondAttribute="leading" id="8FE-Q5-dFO"/>
+                            <constraint firstItem="nC5-QZ-70w" firstAttribute="trailing" secondItem="PAS-Dm-Vt9" secondAttribute="trailing" id="G5W-v4-ajh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="PAS-Dm-Vt9" secondAttribute="trailing" constant="5" id="KIk-nk-JGk"/>
+                            <constraint firstItem="16L-9z-ZLp" firstAttribute="top" secondItem="ZbC-Zt-hYh" secondAttribute="bottom" constant="8" id="Lce-u8-7kZ"/>
+                            <constraint firstItem="OnF-cg-Ipf" firstAttribute="leading" secondItem="nC5-QZ-70w" secondAttribute="leading" id="cEQ-2h-qWL"/>
+                            <constraint firstItem="nC5-QZ-70w" firstAttribute="top" secondItem="PAS-Dm-Vt9" secondAttribute="bottom" constant="22" id="e5e-Lm-vds"/>
+                            <constraint firstItem="PAS-Dm-Vt9" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="gmM-yg-1f8"/>
+                            <constraint firstItem="PAS-Dm-Vt9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="5" id="nTX-uX-5hA"/>
+                            <constraint firstItem="Ncd-Y3-7dv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="pRJ-qa-SOm"/>
+                            <constraint firstItem="OnF-cg-Ipf" firstAttribute="top" secondItem="nC5-QZ-70w" secondAttribute="bottom" constant="21" id="pYg-jY-4mt"/>
+                            <constraint firstItem="Ncd-Y3-7dv" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="phc-c4-GAd"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="ladisplay" destination="OnF-cg-Ipf" id="wre-hr-UOD"/>
+                        <outlet property="num1" destination="PAS-Dm-Vt9" id="fHB-Bh-YW3"/>
+                        <outlet property="num2" destination="nC5-QZ-70w" id="j2M-rC-Rek"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="27.5" y="17"/>
+        </scene>
+    </scenes>
+</document>
